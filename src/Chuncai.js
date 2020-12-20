@@ -20,7 +20,6 @@ class Chuncai {
     constructor(option) {
         this.opt = option;
         this.init();
-    }
 
     init() {
         this.fill();
@@ -34,57 +33,6 @@ class Chuncai {
 
     posttuling(type) {
         var self = this;
-        if (type === TULING_ALL) {
-            $.post("http://www.tuling123.com/openapi/api", {
-                    key: self.opt.tuling.key,
-                    info: "讲个笑话吧",
-                    userid: self.opt.tuling.userid
-                },
-                function(data, status) {
-                    if (status == 'success') {
-                        self.opt.words.push(data.text);
-                        self.opt.jokepos = self.opt.words.length - 1;
-                    }
-                }
-            );
-            $.post("http://www.tuling123.com/openapi/api", {
-                    key: self.opt.tuling.key,
-                    info: "讲个故事吧",
-                    userid: self.opt.tuling.userid
-                },
-                function(data, status) {
-                    if (status == 'success') {
-                        self.opt.words.push(data.text);
-                        self.opt.storypos = self.opt.words.length - 1;
-                    }
-                }
-            );
-        } else if (type == TULING_JOKE) {
-            $.post("http://www.tuling123.com/openapi/api", {
-                    key: self.opt.tuling.key,
-                    info: "讲个笑话吧",
-                    userid: self.opt.tuling.userid
-                },
-                function(data, status) {
-                    if (status == 'success') {
-                        self.opt.words[self.opt.jokepos] = data.text;
-                    }
-                }
-            );
-        } else if (type == TULING_STORY) {
-            $.post("http://www.tuling123.com/openapi/api", {
-                    key: self.opt.tuling.key,
-                    info: "讲个故事吧",
-                    userid: self.opt.tuling.userid
-                },
-                function(data, status) {
-                    if (status == 'success') {
-                        self.opt.words[self.opt.storypos] = data.text;
-                    }
-                }
-            );
-        }
-    }
 
     fill() { //填充dom元素
         $('<a class="chuncai-zhaohuan" href="javascript:;">召唤春菜</a>').appendTo($("body"));
