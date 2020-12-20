@@ -28,14 +28,12 @@ $.chuncai = function(option) {
             },
             "和春菜聊天": 1,
             "传送门": {
-                "博客": function() {
-                    window.open("http://lutao1726.oschina.io");
                 },
                 "码云": function() {
-                    window.open("https://gitee.com/lutao1726");
+                    window.open("https://gitee.com/fangcatchina");
                 },
                 "Git": function() {
-                    window.open("https://lutao1726.github.io/");
+                    window.open("https://fangcatchina.github.io/");
                 }
             },
             "隐藏春菜": function() {
@@ -49,7 +47,7 @@ $.chuncai = function(option) {
         ],
         words: [
             "博客日常，如有误望指出(灬ºωº灬)",
-            "「不要啊」你以为我会这么说么噗噗~",
+            "原网站已废弃！",
             "一起组团烧烤秋刀鱼",
             "白日依山尽，黄河入海流，欲穷千里目，更上 .. .. 一层楼?",
             "啊啦今天想吃点什么呢~",
