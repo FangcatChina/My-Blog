@@ -6,10 +6,6 @@ var Chuncai = require('./Chuncai');
 
 $.chuncai = function(option) {
     var defaults = {
-        tuling: {
-            key: "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-            userid: "xxxxxx"
-        },
         menu: {
             "key": "你想要做什么呢？",
             "显示公告": function() {
