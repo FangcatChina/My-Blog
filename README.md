@@ -3,7 +3,7 @@
 #### 介绍
 个人博客正式版
 [预览点我](http://fangcatchina.gitee.io)
-（引用[网页宠物插件](https://gitee.com/lutao1726/WeiChunCaiChaJian)
+（引用[网页宠物插件](https://gitee.com/lutao1726/WeiChunCaiChaJian)）
 
 #### 参与贡献
 
