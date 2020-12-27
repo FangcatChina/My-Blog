@@ -14,6 +14,16 @@
             <button>我的项目</button>
         </a>
         <hr>
-        <h2>测试文章</h2>
-        <p style='color:gray;'>发布时间：2020-12-20</p>
-        <p>测试aaa</p>
+        <h2>Pyfang库的建立</h2>
+        <p style='color:gray;'>发布时间：2020-12-27</p>
+        <p>
+            首先，我们来写一个Python文件。例：
+            print('hi')
+            我们将它保存为test.py，这个文件名可以自己定义，后面的所有test.py替换为自己的文件名全程。并放在一个单独目录中，再创建一个文件为change.bat，并写入：
+            pyinstaller -F test.py
+            然后双击运行，之后在生成的dist文件夹中可以找到已经转换好的可执行文件，并放在Pyfang主文件目录，写一个Pyfang文件：
+            use test.exe
+            看！它可以正常运行呢！
+            ——End——
+        </p>
+        <h2>重点：区分教程中的Python和Pyfang。</h2>
